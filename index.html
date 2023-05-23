@@ -15,19 +15,24 @@
         <P>Insert your details below </P>
 
         <div class="row">
-          <input type ="number" min="20" max="200" id="weight" value="20"> 
+          <input type ="number" min="20" max="200" id="weight" > 
           <span id="wValue" oninput="determine()">Weight </span>
         </div>
 
         <div class="row">
-            <input type="number" min="20" max="250" id="height" value="20"> 
+            <input type="number" min="20" max="250" id="height"> 
             <span id="hValue" oninput="determine()">Height </span>
           </div>
 
           <div class="display">
-             <button type="button" id="outcome"> Calculate</button>
-             <button  type="button" id="clear" >Reset</button>
-          </div>
+             <button  id="cal" onclick="determine()"> Calculate</button>
+             <button  id="clear" onclick= "reset()" >Reset</button>
+            </div>
+
+            <div>
+             <label id="outcome"></label>
+            </div>
+         
 
 
        </div>   <!--end of container-->

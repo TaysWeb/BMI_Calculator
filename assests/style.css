@@ -41,3 +41,14 @@ body {
 .display {
    margin-bottom: 60px;
 }
+label {
+    border:1px solid white ;
+    color: white ;
+    font-size: 18px;
+    text-align: center;
+    padding:50px  50px 20px ;
+    margin-right:10px;
+}
+input[type = number] {
+    --webkit-appearance : none ;
+}
