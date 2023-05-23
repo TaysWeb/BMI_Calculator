@@ -5,11 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assests/style.css">
+    
     <title>Calculate your BMI</title>
 </head>
-<body>
-    
 
+       <div class="container">
+        
+        <h1>Calculate Your BMI</h1>
+        <P>Insert your details below </P>
+
+        <div class="row">
+          <input type ="number" min="20" max="200" id="weight" value="20"> 
+          <span id="wValue" oninput="determine()">Weight </span>
+        </div>
+
+        <div class="row">
+            <input type="number" min="20" max="250" id="height" value="20"> 
+            <span id="hValue" oninput="determine()">Height </span>
+          </div>
+
+          <div class="display">
+             <button type="button" id="outcome"> Calculate</button>
+             <button  type="button" id="clear" >Reset</button>
+          </div>
+
+
+       </div>   <!--end of container-->
+    
     <script src="./assests/index.js"></script>
 </body>
 </html>
