@@ -34,28 +34,30 @@ body {
     margin-bottom:40px;
 }
 .container p {
-    font-size:20px;
-    color:#f38a8a;
+    margin: 5%;
+    font-size:24px;
+    color: white;
+    letter-spacing: 2px;
+    text-decoration-line: underline;
     text-align: center;
 }
-.display {
-   margin-bottom: 45px;
+.insert {
+      position: absolute;
+      left:20%;
 }
 .row {
-  
     display:flex;
     align-items: center;
     justify-content:flex-start;
     margin-bottom: 30px;
 }
-.row.span {
-    font-size:15px;
-    color:#ff5252;
-    margin-left: -25px;
+span {
+    font-size:22px; 
+    margin-left: 25px;
 }
 label {
     color: white ;
-    font-size: 18px;
+    font-size: 25px;
     text-align: center;
     padding:50px  50px 20px ;
     margin-right:10px;
@@ -64,6 +66,16 @@ input[type = number] {
    width:100px; 
  
 }
+.display{
+    position: absolute;
+    bottom:-3%;
+    display: grid;
+    margin-bottom: 45px;
+    grid-template-columns: 10rem 10rem;
+    gap:50px;
+    justify-content: center;
+    
+  }
 .ani {
     display: inline-block;
     padding: 10px 15px;
@@ -92,3 +104,83 @@ input[type = number] {
     transform: translateY(4px);
   }
   
+  @media (min-width:630px) and  (max-width:990px) {
+    .container {
+      display:inline-block;
+      width:450px;
+      height:410px;
+    }
+    .container h1 {
+        background: #0a272f;
+        text-align: center;
+        letter-spacing: 2px;
+        font-size:1.5rem;
+    }
+    p{
+        margin: 8%;
+      }
+      input[type = number] {
+        width:120px; 
+        height:25px;
+      
+     }
+     .insert {
+        justify-content: center;
+     }
+    
+      span{
+        font-size:1.5rem ;
+        margin:4%;
+      }
+      .display {
+        margin-top: 12%;
+      }
+    
+  }
+  @media (min-width:450px) and  (max-width:630px) {  
+    .container {
+        width:380px;
+        height:400px;
+      }
+      p{
+        margin: 10%;
+      }
+      .insert {
+        display: grid;
+        grid-template-rows: 5rem 5rem  ;
+        gap:2px;
+       
+      }
+      input[type = number] {
+        width:150px; 
+        height:25px;    
+     }
+     span {
+        font-size:1.4rem;
+        margin:5%;
+     }
+    
+     .display {
+        display: grid;
+        grid-template-columns: 8rem 8em;
+        left:13%;
+        bottom:2%;
+     }
+  }
+
+  @media (min-width:280px) and  (max-width:450px) {  
+    .container {
+        width:300px;
+        height:350px;
+      }
+
+
+      .display {
+        display: grid;
+        grid-template-columns: 7.9rem 7.2rem;
+        gap:20px;
+        left:0;
+        
+     }
+  }
+ 

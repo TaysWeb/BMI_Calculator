@@ -14,6 +14,9 @@
         <h1>Calculate Your BMI</h1>
         <P>Insert your details below </P>
 
+
+         <div class="insert">
+
         <div class="row">
           <input type ="number" min="20" max="200" id="weight" > 
           <span id="wValue" oninput="determine()">Weight </span>
@@ -23,6 +26,8 @@
             <input type="number" min="20" max="250" id="height"> 
             <span id="hValue" oninput="determine()">Height </span>
           </div>
+          
+        </div>
 
           <div class="display">
              <button  id="cal" onclick="determine()" class="ani"> Calculate</button>
